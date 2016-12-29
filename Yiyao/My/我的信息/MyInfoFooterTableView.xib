@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MyInfoFooterTableView_ID" id="iN0-l3-epB" customClass="MyInfoFooterTableView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EyD-VB-Sl6">
+                    <rect key="frame" x="12" y="23" width="350" height="40"/>
+                    <color key="backgroundColor" red="0.21568627450980393" green="0.52549019607843139" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="注销用户">
+                        <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EyD-VB-Sl6" secondAttribute="trailing" constant="13" id="AeT-rn-45X"/>
+                <constraint firstItem="EyD-VB-Sl6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="FoY-bF-r8V"/>
+                <constraint firstItem="EyD-VB-Sl6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ggW-fn-CLC"/>
+                <constraint firstItem="EyD-VB-Sl6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="23" id="nsx-sL-WIj"/>
+                <constraint firstAttribute="bottom" secondItem="EyD-VB-Sl6" secondAttribute="bottom" constant="7" id="z5H-NK-DEL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="logoutBtn" destination="EyD-VB-Sl6" id="iVq-Ck-rmX"/>
+            </connections>
+        </view>
+    </objects>
+</document>

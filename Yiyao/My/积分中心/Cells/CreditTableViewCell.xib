@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CreditTableViewCell_ID" id="KGk-i7-Jjw" customClass="CreditTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi8-wM-wtw">
+                        <rect key="frame" x="12" y="5" width="56" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5cw-be-7hZ"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="首次注册">
+                                <attributes>
+                                    <color key="NSColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="STHeitiSC-Medium"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-08-05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oU-xr-Kdd">
+                        <rect key="frame" x="12" y="27" width="206" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="206" id="bgr-wS-8bJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hi8-wM-wtw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="7Gd-GC-EJ5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4oU-xr-Kdd" secondAttribute="bottom" constant="-6.5" id="HlA-zS-NyU"/>
+                    <constraint firstItem="4oU-xr-Kdd" firstAttribute="top" secondItem="Hi8-wM-wtw" secondAttribute="bottom" constant="1" id="R9P-q9-Fu2"/>
+                    <constraint firstItem="Hi8-wM-wtw" firstAttribute="leading" secondItem="4oU-xr-Kdd" secondAttribute="leading" id="hmx-Jz-6gJ"/>
+                    <constraint firstItem="Hi8-wM-wtw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="nxZ-MN-Gy9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="log_content" destination="Hi8-wM-wtw" id="JhI-bn-umr"/>
+                <outlet property="log_time" destination="4oU-xr-Kdd" id="FNE-mV-dyK"/>
+            </connections>
+            <point key="canvasLocation" x="306.5" y="402"/>
+        </tableViewCell>
+    </objects>
+</document>

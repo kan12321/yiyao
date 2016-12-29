@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryRowCell_ID" id="KGk-i7-Jjw" customClass="HistoryRowCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阿司匹林说明书" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIQ-Cc-eq8">
+                        <rect key="frame" x="12" y="12" width="220" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-08-01 12:30" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPp-b4-ong">
+                        <rect key="frame" x="257" y="12" width="110" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="5w8-ew-jan"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wIQ-Cc-eq8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="6ZY-cR-hMn"/>
+                    <constraint firstItem="wIQ-Cc-eq8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="DUE-Ap-DMM"/>
+                    <constraint firstItem="EPp-b4-ong" firstAttribute="leading" secondItem="wIQ-Cc-eq8" secondAttribute="trailing" constant="25" id="UJI-BD-EXq"/>
+                    <constraint firstItem="EPp-b4-ong" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Uxl-fI-2tl"/>
+                    <constraint firstItem="wIQ-Cc-eq8" firstAttribute="firstBaseline" secondItem="EPp-b4-ong" secondAttribute="firstBaseline" id="X8X-F6-UOx"/>
+                    <constraint firstItem="EPp-b4-ong" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="aLE-BG-lm6"/>
+                    <constraint firstItem="EPp-b4-ong" firstAttribute="baseline" secondItem="wIQ-Cc-eq8" secondAttribute="baseline" id="dDS-tk-OhN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="timeLabel" destination="EPp-b4-ong" id="Kr9-0E-bQO"/>
+                <outlet property="titleLabel" destination="wIQ-Cc-eq8" id="I5U-yL-QeW"/>
+            </connections>
+            <point key="canvasLocation" x="441.5" y="279.5"/>
+        </tableViewCell>
+    </objects>
+</document>

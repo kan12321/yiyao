@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CreditHeaderView_ID" id="iN0-l3-epB" customClass="CreditHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTC-VC-2GN">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="积分中心banner" translatesAutoresizingMaskIntoConstraints="NO" id="MUX-UX-o9o">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="119" id="JhU-oG-tBY"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWs-Pk-cno">
+                            <rect key="frame" x="106" y="49" width="108" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="joD-yh-MRO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ZZ-cz-Qyc">
+                            <rect key="frame" x="0.0" y="119" width="320" height="47"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iv0-Oi-SZc">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="47"/>
+                                    <color key="backgroundColor" red="0.30980392156862746" green="0.56862745098039214" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="47" id="buk-Jn-9BK"/>
+                                    </constraints>
+                                    <state key="normal" title="赚积分">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUz-Qz-Mj5">
+                                    <rect key="frame" x="161" y="0.0" width="160" height="47"/>
+                                    <color key="backgroundColor" red="0.30980392159999998" green="0.56862745100000001" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="47" id="qGg-ky-fMU"/>
+                                    </constraints>
+                                    <state key="normal" title="积分提现">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.13725490196078433" green="0.45882352941176469" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="mUz-Qz-Mj5" firstAttribute="width" secondItem="Iv0-Oi-SZc" secondAttribute="width" id="GgE-tL-cgv"/>
+                                <constraint firstAttribute="trailing" secondItem="mUz-Qz-Mj5" secondAttribute="trailing" id="Maj-ew-OMQ"/>
+                                <constraint firstAttribute="bottom" secondItem="Iv0-Oi-SZc" secondAttribute="bottom" id="P8Q-bX-hqv"/>
+                                <constraint firstAttribute="bottom" secondItem="mUz-Qz-Mj5" secondAttribute="bottom" id="Qi3-LF-I9C"/>
+                                <constraint firstItem="mUz-Qz-Mj5" firstAttribute="leading" secondItem="Iv0-Oi-SZc" secondAttribute="trailing" constant="1" id="ak8-GT-wK7"/>
+                                <constraint firstItem="mUz-Qz-Mj5" firstAttribute="top" secondItem="1ZZ-cz-Qyc" secondAttribute="top" id="c4m-y2-yaW"/>
+                                <constraint firstItem="Iv0-Oi-SZc" firstAttribute="top" secondItem="1ZZ-cz-Qyc" secondAttribute="top" id="dNN-P0-g0P"/>
+                                <constraint firstItem="mUz-Qz-Mj5" firstAttribute="leading" secondItem="Iv0-Oi-SZc" secondAttribute="trailing" constant="1" id="sb3-hb-OfR"/>
+                                <constraint firstItem="Iv0-Oi-SZc" firstAttribute="leading" secondItem="1ZZ-cz-Qyc" secondAttribute="leading" id="xbA-PM-JT0"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="积分明细" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ar-EJ-UwU">
+                            <rect key="frame" x="12" y="174" width="82" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="82" id="CeC-7p-CTP"/>
+                                <constraint firstAttribute="height" constant="21" id="VRH-sg-sZ2"/>
+                                <constraint firstAttribute="width" constant="82" id="pz1-ww-55a"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="pz1-ww-55a"/>
+                                </mask>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="WWs-Pk-cno" secondAttribute="trailing" constant="106" id="65r-Fj-Wbw"/>
+                        <constraint firstItem="1ZZ-cz-Qyc" firstAttribute="top" secondItem="MUX-UX-o9o" secondAttribute="bottom" id="COp-GU-Icf"/>
+                        <constraint firstItem="MUX-UX-o9o" firstAttribute="top" secondItem="cTC-VC-2GN" secondAttribute="top" id="G63-gI-1gk"/>
+                        <constraint firstItem="1ZZ-cz-Qyc" firstAttribute="leading" secondItem="MUX-UX-o9o" secondAttribute="leading" id="GYM-O4-szD"/>
+                        <constraint firstItem="WWs-Pk-cno" firstAttribute="leading" secondItem="cTC-VC-2GN" secondAttribute="leading" constant="106" id="GiR-oP-H1A"/>
+                        <constraint firstItem="3ar-EJ-UwU" firstAttribute="leading" secondItem="cTC-VC-2GN" secondAttribute="leadingMargin" id="J54-WT-QGm"/>
+                        <constraint firstItem="1ZZ-cz-Qyc" firstAttribute="trailing" secondItem="MUX-UX-o9o" secondAttribute="trailing" id="MZh-z2-fb6"/>
+                        <constraint firstItem="WWs-Pk-cno" firstAttribute="top" secondItem="cTC-VC-2GN" secondAttribute="top" constant="49" id="PAp-oR-Th5"/>
+                        <constraint firstItem="3ar-EJ-UwU" firstAttribute="top" secondItem="1ZZ-cz-Qyc" secondAttribute="bottom" constant="8" id="TyL-Ru-QYw"/>
+                        <constraint firstItem="3ar-EJ-UwU" firstAttribute="top" secondItem="1ZZ-cz-Qyc" secondAttribute="bottom" constant="8" symbolic="YES" id="ZbC-ty-ch0"/>
+                        <constraint firstAttribute="trailing" secondItem="MUX-UX-o9o" secondAttribute="trailing" id="aUC-CU-BA0"/>
+                        <constraint firstItem="3ar-EJ-UwU" firstAttribute="leading" secondItem="cTC-VC-2GN" secondAttribute="leading" constant="12" id="eDy-rZ-SLG"/>
+                        <constraint firstAttribute="bottom" secondItem="3ar-EJ-UwU" secondAttribute="bottom" constant="5" id="fJU-MM-hUV"/>
+                        <constraint firstItem="MUX-UX-o9o" firstAttribute="leading" secondItem="cTC-VC-2GN" secondAttribute="leading" id="wgv-TO-rQC"/>
+                        <constraint firstAttribute="bottom" secondItem="3ar-EJ-UwU" secondAttribute="bottom" constant="5" id="zBc-gZ-QcV"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="J54-WT-QGm"/>
+                            <exclude reference="ZbC-ty-ch0"/>
+                            <exclude reference="zBc-gZ-QcV"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cTC-VC-2GN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9uo-8i-iYQ"/>
+                <constraint firstAttribute="trailing" secondItem="cTC-VC-2GN" secondAttribute="trailing" id="God-09-6T4"/>
+                <constraint firstAttribute="bottom" secondItem="cTC-VC-2GN" secondAttribute="bottom" id="kla-jN-a1z"/>
+                <constraint firstItem="cTC-VC-2GN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uKk-Fn-jNH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="fenLabel" destination="WWs-Pk-cno" id="Roz-XT-jdO"/>
+                <outlet property="gotBtn" destination="mUz-Qz-Mj5" id="c7e-Du-ndI"/>
+            </connections>
+            <point key="canvasLocation" x="436.5" y="403"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="积分中心banner" width="375" height="113"/>
+    </resources>
+</document>

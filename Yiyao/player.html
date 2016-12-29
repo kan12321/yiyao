@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
+<style type="text/css">
+body{margin:0px;padding:0px;background:#000000;height:100%}
+#bg{margin:0px;padding:0px;background:#FFFFFF;}
+
+*{
+padding: 0px;
+margin: 0px;
+}
+
+</style>
+</head>
+<body>
+<video id="player" autoplay="true" src="http://2449.vod.myqcloud.com/2449_22ca37a6ea9011e5acaaf51d105342e3.f20.mp4" height="100px" controls="controls" width="100%"  >
+</video>
+</body>
+<script type="text/javascript">
+
+function launchFullScreen(element) {
+if(element.requestFullScreen) {
+element.requestFullScreen();
+} else if(element.mozRequestFullScreen) {
+element.mozRequestFullScreen();
+} else if(element.webkitRequestFullScreen) {
+element.webkitRequestFullScreen();
+}
+}
+document.getElementById("player").style.height = document.body.offsetHeight + "px";
+
+// Launch fullscreen for browsers that support it!
+//launchFullScreen(document.documentElement); // the whole page
+//launchFullScreen(document.getElementById("player"));
+</script>
+</html>

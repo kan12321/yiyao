@@ -1,0 +1,51 @@
+//
+//  PrefixHeader.pch
+//  Yiyao
+//
+//  Created by matthew.rod on 16/8/4.
+//  Copyright © 2016年 Yiyao.com. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+#define UIColorFromRGB(rgbValue) [[UIColor alloc] initWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue &0xFF00) >>8))/255.0 blue:((float)(rgbValue &0xFF))/255.0 alpha:1.0]
+
+
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#define MaxX(view)   CGRectGetMaxX(view.frame)
+#define MaxY(view)   CGRectGetMaxY(view.frame)
+
+#define MinX(view)   CGRectGetMinX(view.frame)
+#define MinY(view)   CGRectGetMinY(view.frame)
+////定义网络请求的URL
+//#define API_DOMAIN "http://114.55.113.210:8090"
+//#define API_PRE "http://114.55.113.210:8090/api/"
+////定义网络请求的URL
+//正式地址
+#define API_DOMAIN "http://114.55.60.34:8080"
+#define API_PRE "http://114.55.60.34:8080/api/"
+
+//#define API_DOMAIN "http://192.168.0.100:8080"
+//#define API_PRE "http://192.168.0.100:8080/api/"
+#pragma mark 据说此方法真机不打印nslog 调试打印节省性能
+#ifdef DEBUG
+#define DLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define DeBugLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define NSLog(...) NSLog(__VA_ARGS__);
+#define MyNSLog(FORMAT, ...) fprintf(stderr,"[%s]:[line %d行] %s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define DLog(...)
+#define DeBugLog(...)
+#define NSLog(...)
+#define MyNSLog(FORMAT, ...) nil
+#endif
+//颜色定义
+#define FooterBorderColor 0xe2e2e2

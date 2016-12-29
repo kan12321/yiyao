@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BrowsedTableViewCell_ID" id="KGk-i7-Jjw" customClass="BrowsedTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="test_book" translatesAutoresizingMaskIntoConstraints="NO" id="pa2-fE-ANp">
+                        <rect key="frame" x="12" y="15" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="T8X-cr-Uan"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXX说明书" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fn8-Fw-vvg">
+                        <rect key="frame" x="93" y="15" width="274" height="65"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vuu-TF-lU6">
+                        <rect key="frame" x="12" y="15" width="65" height="65"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="RSt-1I-85u">
+                                <rect key="frame" x="18" y="17" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="2AU-da-8JF"/>
+                                    <constraint firstAttribute="height" constant="30" id="n4K-Sc-M3m"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RSt-1I-85u" secondAttribute="trailing" constant="17" id="Kcn-Lm-eyF"/>
+                            <constraint firstItem="RSt-1I-85u" firstAttribute="leading" secondItem="Vuu-TF-lU6" secondAttribute="leading" constant="18" id="NWz-LY-DJs"/>
+                            <constraint firstAttribute="height" constant="65" id="Vae-Cl-NlO"/>
+                            <constraint firstItem="RSt-1I-85u" firstAttribute="top" secondItem="Vuu-TF-lU6" secondAttribute="top" constant="17" id="X68-cU-gY8"/>
+                            <constraint firstAttribute="width" constant="65" id="hXw-wJ-dgE"/>
+                            <constraint firstAttribute="bottom" secondItem="RSt-1I-85u" secondAttribute="bottom" constant="18" id="xvA-hZ-m6L"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pa2-fE-ANp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="8je-9a-ghF"/>
+                    <constraint firstItem="pa2-fE-ANp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="95U-4s-WHg"/>
+                    <constraint firstItem="Fn8-Fw-vvg" firstAttribute="leading" secondItem="Vuu-TF-lU6" secondAttribute="trailing" constant="16" id="CQb-HR-doq"/>
+                    <constraint firstItem="Vuu-TF-lU6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="FI3-eH-9Wj"/>
+                    <constraint firstItem="pa2-fE-ANp" firstAttribute="top" secondItem="Fn8-Fw-vvg" secondAttribute="top" id="PfY-1v-JI5"/>
+                    <constraint firstItem="Vuu-TF-lU6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="eIi-w3-r2X"/>
+                    <constraint firstItem="pa2-fE-ANp" firstAttribute="bottom" secondItem="Fn8-Fw-vvg" secondAttribute="bottom" id="jkz-Xj-yha"/>
+                    <constraint firstItem="Fn8-Fw-vvg" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="v5r-rk-Mmj"/>
+                    <constraint firstItem="Fn8-Fw-vvg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wge-7L-4bz"/>
+                    <constraint firstItem="Fn8-Fw-vvg" firstAttribute="leading" secondItem="pa2-fE-ANp" secondAttribute="trailing" constant="16" id="xeA-gg-Gt1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Vuu-TF-lU6" secondAttribute="bottom" constant="7" id="z3W-Rk-6Fk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="blackView" destination="Vuu-TF-lU6" id="kRI-17-Yzj"/>
+                <outlet property="introImageView" destination="pa2-fE-ANp" id="Pgl-YP-lKb"/>
+                <outlet property="playerBtn" destination="RSt-1I-85u" id="V7P-44-Q6a"/>
+                <outlet property="titleLabel" destination="Fn8-Fw-vvg" id="z8h-La-ONm"/>
+            </connections>
+            <point key="canvasLocation" x="306.5" y="219.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="player" width="38" height="38"/>
+        <image name="test_book" width="89" height="93"/>
+    </resources>
+</document>

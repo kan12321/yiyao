@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SignCell_ID" id="KGk-i7-Jjw" customClass="SignCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test-avatar" translatesAutoresizingMaskIntoConstraints="NO" id="cDa-02-Kvc">
+                        <rect key="frame" x="12" y="12" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="RDo-Nr-6rk"/>
+                            <constraint firstAttribute="width" constant="43" id="ed0-ru-pfx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您已连续签到0天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCY-e1-jCJ">
+                        <rect key="frame" x="67" y="17" width="130" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="57x-jm-l2V"/>
+                            <constraint firstAttribute="height" constant="14" id="63i-vG-fxd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前积分 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tuv-RJ-ilX">
+                        <rect key="frame" x="67" y="38" width="130" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="Mkt-9h-BPS"/>
+                            <constraint firstAttribute="width" constant="130" id="Zvx-4f-Y3V"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzq-00-q9K">
+                        <rect key="frame" x="249" y="8" width="60" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="3Ix-y6-YRb"/>
+                            <constraint firstAttribute="height" constant="23" id="zp0-J0-JNW"/>
+                        </constraints>
+                        <state key="normal" title="签到">
+                            <color key="titleColor" red="0.9490196704864502" green="0.41960787773132324" blue="0.15686275064945221" alpha="1" colorSpace="deviceRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nP4-i9-7qy">
+                        <rect key="frame" x="232" y="38" width="77" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="ZSA-c2-uoS"/>
+                            <constraint firstAttribute="width" constant="77" id="fY1-D7-C2R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="走，花积分 &gt;"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Tuv-RJ-ilX" firstAttribute="leading" secondItem="cDa-02-Kvc" secondAttribute="leading" constant="49" id="6uH-4c-OGq"/>
+                    <constraint firstItem="Tuv-RJ-ilX" firstAttribute="bottom" secondItem="VCY-e1-jCJ" secondAttribute="bottom" constant="20" id="7rY-r7-pRX"/>
+                    <constraint firstItem="cDa-02-Kvc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="DqO-jR-p43"/>
+                    <constraint firstItem="Tuv-RJ-ilX" firstAttribute="top" secondItem="VCY-e1-jCJ" secondAttribute="bottom" constant="7" id="EA3-Qm-3Qe"/>
+                    <constraint firstItem="cDa-02-Kvc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="HfQ-Ng-iwl"/>
+                    <constraint firstItem="lzq-00-q9K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Hlg-o3-eOH"/>
+                    <constraint firstItem="nP4-i9-7qy" firstAttribute="top" secondItem="lzq-00-q9K" secondAttribute="bottom" constant="7" id="IPZ-35-DfW"/>
+                    <constraint firstItem="lzq-00-q9K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Luv-Mr-ttt"/>
+                    <constraint firstItem="VCY-e1-jCJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Mez-UX-cEM"/>
+                    <constraint firstItem="Tuv-RJ-ilX" firstAttribute="top" secondItem="VCY-e1-jCJ" secondAttribute="bottom" constant="9" id="P3j-14-cRJ"/>
+                    <constraint firstItem="Tuv-RJ-ilX" firstAttribute="leading" secondItem="cDa-02-Kvc" secondAttribute="trailing" constant="12" id="Q6x-7a-vfi"/>
+                    <constraint firstItem="VCY-e1-jCJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="18" id="SHh-GJ-GC0"/>
+                    <constraint firstItem="VCY-e1-jCJ" firstAttribute="leading" secondItem="cDa-02-Kvc" secondAttribute="leading" constant="49" id="Zph-FV-Dv0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nP4-i9-7qy" secondAttribute="trailing" constant="3" id="hUi-NC-Qof"/>
+                    <constraint firstItem="VCY-e1-jCJ" firstAttribute="leading" secondItem="cDa-02-Kvc" secondAttribute="trailing" constant="12" id="pCc-lG-R4h"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lzq-00-q9K" secondAttribute="trailing" constant="3" id="sLj-Wy-MQI"/>
+                    <constraint firstItem="VCY-e1-jCJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="t2L-Pj-QHl"/>
+                    <constraint firstItem="nP4-i9-7qy" firstAttribute="top" secondItem="lzq-00-q9K" secondAttribute="bottom" constant="1" id="xX1-BF-o08"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Mez-UX-cEM"/>
+                        <exclude reference="SHh-GJ-GC0"/>
+                        <exclude reference="Zph-FV-Dv0"/>
+                        <exclude reference="6uH-4c-OGq"/>
+                        <exclude reference="7rY-r7-pRX"/>
+                        <exclude reference="P3j-14-cRJ"/>
+                        <exclude reference="xX1-BF-o08"/>
+                        <exclude reference="Hlg-o3-eOH"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="Integral" destination="Tuv-RJ-ilX" id="c0g-z4-cz4"/>
+                <outlet property="gotCreditBtn" destination="nP4-i9-7qy" id="OGT-3P-BJR"/>
+                <outlet property="signIn" destination="lzq-00-q9K" id="12S-2h-Nkk"/>
+                <outlet property="signInDay" destination="VCY-e1-jCJ" id="d5O-cC-Hi3"/>
+                <outlet property="userImageView" destination="cDa-02-Kvc" id="CGb-4e-zgT"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="test-avatar" width="100" height="100"/>
+    </resources>
+</document>

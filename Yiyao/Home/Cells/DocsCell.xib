@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DocsCell_ID" id="KGk-i7-Jjw" customClass="DocsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="最新" translatesAutoresizingMaskIntoConstraints="NO" id="71j-i2-gqc">
+                        <rect key="frame" x="12" y="8" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="4Qz-dh-w5R"/>
+                            <constraint firstAttribute="width" constant="20" id="BS0-Ik-8tZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wY-d0-y34">
+                        <rect key="frame" x="40" y="8" width="42" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="721-C1-Hm4"/>
+                            <constraint firstAttribute="height" constant="15" id="bi5-AZ-EOl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="71j-i2-gqc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="F7t-KI-4U4"/>
+                    <constraint firstItem="71j-i2-gqc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="eCm-Q1-uCu"/>
+                    <constraint firstItem="9wY-d0-y34" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ewv-IG-de0"/>
+                    <constraint firstItem="9wY-d0-y34" firstAttribute="leading" secondItem="71j-i2-gqc" secondAttribute="trailing" constant="8" id="p7l-tL-xkd"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="最新" width="20" height="20"/>
+    </resources>
+</document>
